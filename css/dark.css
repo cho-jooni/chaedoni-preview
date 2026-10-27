@@ -1,0 +1,90 @@
+/* 채돈이 블랙톤 테마 + 큰 글씨. style.css·creative.css 뒤에 불러와 색과 글자 크기만 덮어씁니다.
+   되돌리려면 각 HTML에서 이 파일의 <link>를 제거하면 됩니다. */
+:root{
+  --bg:#111110;        /* 바탕: 거의 검정 */
+  --paper:#1c1b19;     /* 카드·헤더·폼 */
+  --sand:#232120;      /* 띠 영역 */
+  --ink:#f3eee5;       /* 본문 글자 */
+  --muted:#c2bbad;     /* 보조 글자 (대비 확보) */
+  --line:#363330;      /* 구분선 */
+  --accent:#dcb97a;    /* 링크·강조 (골드, 밝게) */
+  --gold:#c9a66b;
+  --play-orange:#e5895a;
+  --play-green:#c9a66b;
+  --play-cream:#111110;
+  --play-peach:#c9a66b;
+  color-scheme:dark;
+}
+html{background:var(--bg)}
+body{background:var(--bg);color:var(--ink);font-size:18px;line-height:1.85}
+::selection{background:#c9a66b;color:#111}
+a{color:var(--accent)}.skip{background:var(--paper);color:var(--ink)}
+.eyebrow{font-size:15px;color:var(--accent)}
+h3{font-size:25px}
+
+/* 헤더·내비 */
+.site-header{background:#0d0d0c;border-bottom-color:var(--line)}
+nav a{color:var(--ink);font-size:17px}nav a[aria-current]{color:var(--accent)}.nav-toggle{color:var(--ink);font-size:28px}
+.site-header .logo,.site-footer .logo{background:transparent}.site-footer .logo{border:0}
+.logo img{filter:invert(1) brightness(1.05);mix-blend-mode:screen}
+.button{border-color:#d8d0c2;color:var(--ink);font-size:16.5px}.button:hover{background:var(--sand);color:var(--ink)}
+.phone,.mobile-bar .phone,.header-phone{background:var(--gold);color:#141210;border-color:var(--gold)}.phone:hover{background:#dcb97a;color:#141210}
+.photo-label{background:var(--gold);color:#141210;font-size:15px}
+.badge{color:var(--accent);font-size:14px}
+
+/* 첫 화면 */
+.playful-hero{background:#111110;color:var(--ink)}
+.playful-hero .eyebrow{color:var(--play-orange);font-size:14px}
+.accent-line{color:#e5895a}
+.playful-hero .hero-description{color:var(--muted);font-size:18px}
+.primary-button{background:#b85a33;border-color:#b85a33;color:#fff;font-size:16.5px}.primary-button:hover{background:#d36b3f;color:#fff}
+.quiet-link{color:var(--ink);font-size:16.5px;border-bottom-color:var(--gold)}
+.greeting-bubble{background:var(--paper);border-color:#4a4034;color:var(--ink);font-size:14.5px}.mascot-greeting small{color:var(--muted);font-size:13px}
+.playful-status{border-top-color:var(--line);color:var(--muted);font-size:15px}.playful-status a{color:var(--play-orange)}
+.chef-stage{background:#0f0e0c;border-color:#3b332b}.chef-caption{color:#f3eee5;border-top-color:#3b332b}.chef-kicker{font-size:12px;color:#d1a775}.chef-caption p{font-size:24px}
+.motion-toggle{font-size:14px;color:#f3eee5;background:#2a241e;border-color:#6a5641}.chef-stage .art-note{color:#a89c88;font-size:12.5px}
+.page-index .heritage,.heritage{background:#181715;border-color:var(--line)}
+.page-index .stats strong{color:var(--accent)}.stats strong>span{color:var(--ink)}.stats p+p{border-left-color:var(--line)}.stats p>span{color:var(--muted);font-size:14px}
+.page-index .signature,.signature{background:var(--bg)}
+.signature-copy>p:not(.eyebrow){color:var(--muted);font-size:19px}.menu-fact{border-top-color:var(--line)}.menu-fact>p:last-child{color:var(--muted);font-size:15.5px}
+.taste-section{background:#161514;border-top-color:var(--line)}.taste-section .center-heading>p:last-child{color:var(--muted);font-size:17px}
+.sauce-art{border-color:var(--line)}
+.taste-buttons button{background:var(--paper);border-color:#4a4440;color:var(--ink);font-size:17px}.taste-buttons button>span{color:var(--muted);font-size:12px}
+.taste-buttons button[aria-pressed=true]{background:var(--gold);border-color:var(--gold);color:#141210;box-shadow:0 4px 0 #7f6540}.taste-buttons button[aria-pressed=true]>span{color:#3d3120}
+.taste-description{background:var(--paper);border-left-color:var(--gold)}.taste-step{color:var(--accent);font-size:15px}.taste-description p{color:var(--muted);font-size:17px}
+.branches-home{background:#141312}.branches-home .card{background:var(--paper)}
+.branch-card{border-top-color:var(--gold)}.branch-card h3 a{color:var(--ink)}.branch-card>p{color:var(--muted);font-size:16.5px}.branch-actions{border-top-color:var(--line);font-size:15.5px}.branch-actions span{color:var(--muted)}
+.branch-card dl{font-size:15.5px}.branch-card dd{color:var(--muted)}
+.reviews-home,.page-index .reviews-home{background:#181715}.quote-mark{color:var(--gold)}.quote-card>p{font-size:19px}.card cite{color:var(--muted);font-size:15px}
+
+/* 공통 카드·사진·표·폼 */
+.card{background:var(--paper);border-color:var(--line)}.card:hover{box-shadow:0 15px 35px #00000066;border-color:var(--gold)}
+.photo{background:#242220;border-color:var(--line);color:var(--muted)}.photo figcaption{font-size:16px}.photo figcaption span{font-size:14px}
+.image-caption{color:var(--muted);font-size:15px}
+.faq-list details{border-color:var(--line)}summary{font-size:19px}summary:after{color:var(--accent);font-size:26px}details p{color:var(--muted);font-size:17px}
+.page-intro{background:#0f0e0d;color:#fff}.page-intro:before{background:linear-gradient(90deg,#0b0b0af0,#0b0b0a80),var(--intro-image,url('../img/hero-grill.jpg')) center/cover}
+.page-intro .eyebrow{color:#e6cf9f}.page-intro>p:last-child{color:#e6e0d4;font-size:18px}.page-intro .button{color:#fff;border-color:#e4d2b4}
+.page-privacy .page-intro{color:var(--ink);background:var(--sand)}.page-privacy .page-intro .eyebrow{color:var(--accent)}.page-privacy .page-intro>p:last-child{color:var(--muted)}
+.prose p{color:var(--muted);font-size:17.5px}
+table{background:var(--paper);font-size:17px}caption{color:var(--muted);font-size:15px}th,td{border-bottom-color:var(--line)}thead th{background:var(--sand);border-top-color:var(--gold)}
+.steps li{background:var(--paper);border-top-color:var(--gold)}.steps strong{font-size:20px}.steps p{color:var(--muted)}.steps small{color:var(--muted);font-size:15px}.process li>span{color:var(--accent)}
+.timeline{border-left-color:var(--gold)}.timeline li:before{border-color:var(--gold);background:var(--bg)}.timeline p{color:var(--muted)}
+form{background:var(--paper);border-top-color:var(--gold)}
+input:not([type=checkbox]),select,textarea{background:#121110;color:var(--ink);border-color:#4a4440;font-size:17px}
+input::placeholder,textarea::placeholder{color:#8f877a}select option{background:#1c1b19;color:var(--ink)}
+.consent span{font-size:15px;color:var(--muted)}#form-status{font-size:17px}
+.illustrated-story p:not(.eyebrow){color:var(--muted)}
+
+/* 지점장 포스터 페이지 */
+.poster-section{background:#0d0d0c}.example-note{border-color:#5a5347;color:#d2cbbd;font-size:15px}
+.poster-intro{font-size:13px}.poster-sub{font-size:12.5px}.photo.poster figcaption{font-size:12px}.photo.poster figcaption span{font-size:11px}
+.poster-comment{background:#1c1b19;border-color:#3a3730;font-size:15px}.poster-comment:before{background:#1c1b19;border-color:#3a3730}.poster-comment p{font-size:16.5px}.poster-comment cite{font-size:13.5px}.poster-comment cite span{font-size:12px;color:#9a927f}
+
+/* 푸터·모바일 바 */
+.site-footer{background:#080808;color:#c8c1b3;font-size:15px;border-top:1px solid var(--line)}.site-footer small{color:#a39b8c;font-size:14px}
+.footer-links a{color:#e6cf9f;font-size:15.5px}.footer-links a[aria-disabled=true]{color:#a39b8c}.footer-friend{border-bottom-color:#ffffff1a}.footer-friend p{color:#eee2c4}
+.mobile-bar{background:#0d0d0c;border-top-color:var(--line)}.mobile-bar a{font-size:16px;color:var(--ink)}
+
+@media(min-width:700px){.playful-hero .hero-description{font-size:19px}.stats p>span{font-size:16px}}
+@media(min-width:1050px){nav a{font-size:17px}.header-phone{font-size:15px}.playful-hero .hero-description{font-size:20px}.stats p>span{font-size:17px}.process strong{font-size:17px}.process small{font-size:14px}.poster-intro{font-size:13.5px}}
+@media(prefers-reduced-motion:no-preference){.card:hover{box-shadow:0 15px 35px #00000066}}
